@@ -16,7 +16,7 @@ from tqdm.notebook import tqdm
 from sklearn.datasets import fetch_20newsgroups
 from sklearn.feature_extraction.text import CountVectorizer
 n_samples = 10000
-data, _ = fetch_20newsgroups(shuffle=True, random_state=1,
+data = fetch_20newsgroups(shuffle=True, random_state=1,
                              remove=('headers', 'footers', 'quotes'),
                              return_X_y=True,
                             )
